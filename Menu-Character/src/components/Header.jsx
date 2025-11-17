@@ -1,13 +1,16 @@
 import React from "react";
 import "./Header.css";
+import corazaLogo from "../assets/corazaLogo.png";
 
 function Header() {
   return (
     <header className="header">
       <div className="header-logo">
-        <h1>Coraza de Guerra</h1>
+      <img src="{corazaLogo}" alt="Logo" />
       </div>
-
+      <div className="header-title">
+        <h3>Coraza de Guerra</h3>
+      </div>
       <nav className="header-nav">
         <ul>
           <li><a href="#">Inicio</a></li>
