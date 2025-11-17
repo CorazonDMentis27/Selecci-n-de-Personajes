@@ -1,0 +1,73 @@
+header {
+  width: 100%;
+  height: 80px;
+  background: #0a0a0a;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+  box-sizing: border-box;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  /* Sombra elegante */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  /* Blur sutil tipo Apple */
+  backdrop-filter: blur(12px);
+}
+
+/* Logo */
+.header-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Nav */
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li {
+  font-size: 1.05rem;
+  cursor: pointer;
+
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #ff4747;
+}
+
+/* Línea animada abajo */
+nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #ff4747;
+
+  transition: width 0.3s ease;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+/* Para empujar el contenido hacia abajo, ya que el header es fixed */
+.header-space {
+  height: 80px;
+}
