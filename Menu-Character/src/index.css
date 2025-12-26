@@ -66,3 +66,42 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* index.css */
+@font-face {
+  font-family: 'DEFTONE';
+  src: url('./assets/fonts/DEFTONE.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontleroyBrown';
+  src: url('./assets/fonts/FontleroyBrown.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Warsuck';
+  src: url('./assets/fonts/Warsuck.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family:'Ralgine';
+  src: url('./assets/fonts/Ralgine\ Italic\ DEMO\ VERSION.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brotherhood';
+  src: url('./assets/fonts/Brother\ Legend\ TTF\ Demo.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cheva';
+  src: url('./assets/fonts/Cheva\ Display\ Demo.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

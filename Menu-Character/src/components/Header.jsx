@@ -1,26 +1,28 @@
 import React from "react";
 import "./Header.css";
-import corazaLogo from "../assets/corazaLogo.png";
+import corazaLogo from "../assets/images/corazaLogo.png";
 
-function Header() {
+export default function Header() {
   return (
     <header className="header">
       <div className="header-logo">
-      <img src="{corazaLogo}" alt="Logo" />
+      <img src={corazaLogo} alt="Logo" />
       </div>
-      <div className="header-title">
-        <h3>Coraza de Guerra</h3>
-      </div>
+      <div>
       <nav className="header-nav">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Personajes</a></li>
-          <li><a href="#">Historia</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Game Info</a></li>
+          <li><a href="#">Heroes</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Media</a></li>
         </ul>
       </nav>
+      </div>
+      <div className="header-title">
+        <h3>CdG</h3>
+      </div>
     </header>
   );
 }
 
-export default Header;

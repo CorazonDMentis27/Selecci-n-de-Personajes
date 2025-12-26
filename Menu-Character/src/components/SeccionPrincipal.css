@@ -1,0 +1,50 @@
+/* ===== HERO: VIDEO FULL-SCREEN ===== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full alto de pantalla */
+  overflow: hidden;
+}
+/* Video cubre todo el fondo */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* llena toda la pantalla sin deformar */
+  z-index: -2;
+}
+/* Oscurece el video para que el texto sea visible */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* oscurecimiento sutil */
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+/* Centro del texto */
+.hero-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.hero-content h1 {
+  font-family: 'Brotherhood', serif !important;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #c9a36b; /* oro arcano */
+  text-shadow: 
+    0 0 8px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(0, 0, 0, 0.7),
+    0 0 40px rgba(80, 60, 20, 0.8);
+}
+
+
