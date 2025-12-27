@@ -1,7 +1,10 @@
 import './Universo.css';
 import UniversoImage from '../assets/images/15.jpg';
+import { use } from 'react';
 
 export default function Universo() {
+    
+    
     return (
         <section className="Ochoku">
             <div className="Universo-content">

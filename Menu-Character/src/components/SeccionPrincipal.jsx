@@ -12,9 +12,7 @@ export default function SeccionPrincipal() {
         muted
         loop
       ></video>
-
       <div className="hero-overlay"></div>
-
       <div className="hero-content">
         <h1>CORAZA DE GUERRA</h1>
       </div>

@@ -1,0 +1,120 @@
+/* Sección principal */
+.Ochoku {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(
+  to bottom,
+  rgba(20, 20, 20, 0.35) 35%,
+  rgba(21, 21, 19, 0.65) 70%,
+  rgba(0, 0, 0, 0.9) 100%,
+  rgba(248, 216, 89, 0.15) 0%,
+);
+}
+.Universo-content {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+/* Imagen */
+.Universo-content img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: 0;
+  transition: transform 0.8s ease, filter 0.8s ease;
+}
+.Universo-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.Universo-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(180, 40, 40, 0.11); /* rojo pálido */
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+.Universo-content:hover img {
+  transform: scale(1.05);
+  filter: contrast(1.05) brightness(0.95);
+}
+
+.Universo-content:hover::after {
+  opacity: 1;
+}
+/* ===TEXTO ANIMACION=== */
+.Universo-text {
+  position: relative;
+  z-index: 5; 
+}
+.Universo-text h2 { 
+ position: relative;
+ font-size: 40px;
+ letter-spacing: 5px;
+ font-family: monospace;
+ border-right: none;
+ width: 100%;
+ white-space: nowrap;
+ font-family: Brotherhood; 
+ overflow: hidden;
+ animation: 
+   typing 2s steps(29, end),
+   cursor .2s step-end infinite;
+  padding-left: 4rem;   /* 👈 espacio desde el borde */
+  padding-right: 2rem;
+  padding-top: 7rem;
+}
+.typing {
+  display: inline-block;
+  font-size: 5em;
+  letter-spacing: 10px;
+  font-family: monospace;
+  color: #fff;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  width: 0ch;
+}
+
+/* cursor */
+.typing::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0.15em;
+  height: 1em;
+  width: 4px;
+  background: #fff;
+  opacity: 0;
+}
+/* SOLO cuando entra en viewport */
+.typing.active {
+  animation:
+    typing 3s steps(29, end) forwards;
+}
+
+.typing.active::after {
+  animation: cursor 0.6s step-end infinite;
+  opacity: 1;
+}
+@keyframes cursor{
+  50% {border-color: transparent;}
+}
+@keyframes typing {
+  from { width: 0ch; }
+  to   { width: 36ch; }
+}
+
