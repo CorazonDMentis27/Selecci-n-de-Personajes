@@ -10,7 +10,8 @@ export default function Universo() {
             <div className="Universo-content">
                 <img src={UniversoImage} alt="UniverseCoraza"/>
                 <div className="Universo-text">
-                    <h2>Explora el Universo de Coraza</h2>
+                    <h2>Coraza de Guerra</h2>
+                    <p>EXPLORA EL UNIVERSO</p>
                 </div>
             </div>  
         </section>

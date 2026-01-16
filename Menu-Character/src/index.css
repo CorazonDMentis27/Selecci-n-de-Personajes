@@ -105,3 +105,9 @@ button:focus-visible {
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Midnight';
+  src: url('./assets/fonts/Midnight\ Angel.ttf')format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
